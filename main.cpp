@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    char op;
+    char op;     // Charcter is operator 'op'
     double num1, num2;
 
     cout << "Enter operator (+, -, *, /): ";
@@ -27,13 +27,13 @@ int main()
         cout << num1 << " * " << num2 << " = " << num1 * num2;
         break;
     case '/':
-        if (num2 != 0)
+        if (num2 != 0) // everyone knows if the division over zero is incorrect 'Error' so i use the condition if to fix it 
             cout << num1 << " / " << num2 << " = " << num1 / num2;
         else
             cout << "Error, Division by zero.";
         break;
     default:
-        cout << "Error, Operator isn't correct";
+        cout << "Error, Operator isn't correct"; // if the operator are not (+, -, *, /) ==> Error
         break;
     }
 
